@@ -4,10 +4,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="border-t pb-12 ">
+    <div className="border-t pb-12 mt-12 ">
       <div className="container">
         <h2 className="text-2xl py-4 font-bold text-primary">Buy Tulsi</h2>
-        <div className="grid md:grid-cols-3">
+        <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-muted-foreground font-medium mb-2">
               Quick Links
