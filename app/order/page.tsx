@@ -57,10 +57,13 @@ const OrderPage = () => {
   // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      const response = await axios.post("http://localhost:3000/api/order", {
-        ...values,
-        quantity: Quantity,
-      });
+      const response = await axios.post(
+        `${process.env.FRONTEND_URL}/api/order`,
+        {
+          ...values,
+          quantity: Quantity,
+        }
+      );
       router.push(response.data.url);
     } catch (error) {
       console.log(error);
