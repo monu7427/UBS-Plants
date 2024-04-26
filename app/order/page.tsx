@@ -207,7 +207,7 @@ const OrderPage = () => {
       </div>
     );
   } else {
-    return <div>loading</div>;
+    return <div className="container md:mt-12 mt-6">loading</div>;
   }
 };
 
