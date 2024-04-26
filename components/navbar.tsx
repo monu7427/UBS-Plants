@@ -17,16 +17,16 @@ const Navbar = () => {
       link: "/",
     },
     {
-      name: "Plants",
-      link: "/plants",
+      name: "Order Now",
+      link: "/order",
     },
     {
       name: "About",
-      link: "/about",
+      link: "/about-us",
     },
     {
       name: "Contact",
-      link: "/contact",
+      link: "/contact-us",
     },
   ];
 
