@@ -31,18 +31,18 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="border-b">
+    <div className="border-b bg-green-500">
       <div className="container py-3 flex justify-between items-center">
         <div className="flex gap-8">
           <Link href={"/"}>
-            <h1 className="text-primary font-bold text-lg">Buy Tulsi</h1>
+            <h1 className="text-black font-bold text-lg">Buy Tulsi</h1>
           </Link>
 
           <div className="md:flex hidden items-center gap-4  ">
             {navbarLinks.map((link, index) => (
               <nav
                 key={index}
-                className="text-foreground/60 hover:text-primary text-sm"
+                className="text-white hover:text-black text-sm"
               >
                 <Link key={index} href={link.link}>
                   {link.name}
@@ -58,10 +58,10 @@ const Navbar = () => {
             </button>
           ) : (
             <div className="text-sm flex gap-2  ">
-              <div className="hover:text-primary">
-                <LoginLink>Sign in</LoginLink>
+              <div className="text-white hover:text-black ">
+                <LoginLink >Sign in</LoginLink>
               </div>
-              <div className="hover:text-primary">
+              <div className="text-white hover:text-black ">
                 <RegisterLink>Register</RegisterLink>
               </div>
             </div>
