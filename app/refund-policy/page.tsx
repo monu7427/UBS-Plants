@@ -1,82 +1,58 @@
-import React from "react";
+import React from 'react';
 
 const page = () => {
   return (
-    <div className="container md:mt-12 mt-6">
-      <h1>Refund Policy</h1>
+    <div className="max-w-2xl mx-auto">
+      <h1 className="text-3xl font-semibold mb-4">Refund Policy</h1>
 
-      <section>
-        <h2>Refund Eligibility</h2>
-        <p>
-          At unlistedbuysell.com, we strive to provide our customers with
-          high-quality products and excellent service. However, if for any
-          reason you are not satisfied with your purchase, you may be eligible
-          for a refund under the following conditions:
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">1. Refund Eligibility</h2>
+        <p className="mb-4">
+          We offer refunds on purchases made directly through our website within 30 days of the purchase date. To be eligible for a refund, the following conditions must be met:
         </p>
-        <ul>
-          <li>
-            Refunds are only available within the first 5 days of your order
-            being placed.[1]
-          </li>
-          <li>
-            The product must be in its original condition, unused, and with all
-            original packaging and accessories intact.[2]
-          </li>
-          <li>
-            Proof of purchase (order number or receipt) must be provided.[3]
-          </li>
+        <ul className="list-disc pl-8">
+          <li>The request for a refund must be made within 30 days of the purchase date.</li>
+          <li>The item must be unused and in the same condition as it was received.</li>
+          <li>Any digital products or services must not have been downloaded or used.</li>
+          <li>Proof of purchase is required.</li>
         </ul>
-      </section>
+      </div>
 
-      <section>
-        <h2>Refund Process</h2>
-        <p>To initiate a refund, please follow these steps:</p>
-        <ol>
-          <li>
-            Contact our customer service team at{" "}
-            <a href="mailto:support@unlistedbuysell.com">
-              support@unlistedbuysell.com
-            </a>{" "}
-            within 5 days of placing your order, providing your order number and
-            reason for the refund request.[1][4]
-          </li>
-          <li>
-            Once your request is approved, you will receive a return
-            authorization number and instructions for returning the product.[2]
-          </li>
-          <li>
-            You are responsible for the shipping costs associated with returning
-            the product, unless the product is defective or the return is due to
-            our error.[3]
-          </li>
-          <li>
-            Upon receipt and inspection of the returned product, we will process
-            your refund within 5-7 business days.[4]
-          </li>
-        </ol>
-      </section>
-
-      <section>
-        <h2>Exceptions</h2>
-        <p>
-          Please note that certain products may be subject to different refund
-          policies or may be non-refundable. These exceptions will be clearly
-          stated on the product page or in the terms and conditions of the
-          specific product.[1][2]
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">2. Non-Refundable Items</h2>
+        <p className="mb-4">
+          Certain items are not eligible for refunds. These include:
         </p>
-      </section>
+        <ul className="list-disc pl-8">
+          <li>Gift cards</li>
+          <li>Downloadable software products</li>
+          <li>Digital memberships or subscriptions</li>
+          <li>Services that have already been provided</li>
+        </ul>
+      </div>
 
-      <section>
-        <h2>Contact Us</h2>
-        <p>
-          If you have any questions or concerns regarding our refund policy,
-          please contact our customer service team at{" "}
-          <a href="mailto:support@unlistedbuysell.com">
-            support@unlistedbuysell.com
-          </a>
-          .
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">3. Refund Process</h2>
+        <p className="mb-4">
+          To request a refund, please contact our customer support team with your order details. Once your request is received and approved, we will process your refund within 7 business days. Refunds will be issued to the original payment method used for the purchase.
         </p>
-      </section>
+      </div>
+
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold mb-2">4. Late or Missing Refunds</h2>
+        <p className="mb-4">
+          If you haven’t received your refund within the expected timeframe, please first check your bank account. Then, contact your credit card company or bank, as it may take some time for the refund to be officially posted. If you’ve done all of this and still have not received your refund, please contact us at <a href="mailto:contact@example.com">contact@example.com</a>.
+        </p>
+      </div>
+
+      <div>
+        <h2 className="text-xl font-semibold mb-2">5. Contact Us</h2>
+        <p>If you have any questions about our refund policy, please contact us:</p>
+        <ul className="list-disc pl-8">
+          <li>Email: <a href="mailto:contact@example.com">contact@example.com</a></li>
+          <li>Phone: 1-800-123-4567</li>
+        </ul>
+      </div>
     </div>
   );
 };
