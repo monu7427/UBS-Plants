@@ -15,6 +15,7 @@ const Card = (props: { imageUrl: string | undefined; title: string | number | bi
           Buy Now
         </button>
       </div>
+      <h3>Manoj </h3>
     </div>
   );
 };
